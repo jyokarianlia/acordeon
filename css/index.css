@@ -1,0 +1,78 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #af67e9;
+  font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body #app {
+  background-color: #e7e7e9;
+  margin: 0 2.5em;
+  margin-top: 15em;
+  border-radius: 20px;
+}
+
+body #app .cont-img {
+  text-align: center;
+}
+
+body #app .cont-img .img2 {
+  position: absolute;
+  top: 74px;
+  left: 11%;
+}
+
+body #app h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+body #app .cont-quiz .line {
+  height: 1px;
+  background-color: #787887;
+}
+
+body #app .cont-quiz div {
+  margin: 0 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #app .cont-quiz div input {
+  display: none;
+}
+
+body #app .cont-quiz div label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=index.css.map */
