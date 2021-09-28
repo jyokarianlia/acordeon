@@ -21,6 +21,7 @@ body #app {
   margin: 0 2.5em;
   margin-top: 15em;
   border-radius: 20px;
+  padding-bottom: 3.5em;
 }
 
 body #app .cont-img {
@@ -44,7 +45,12 @@ body #app .cont-quiz .line {
   background-color: #787887;
 }
 
-body #app .cont-quiz div {
+body #app .cont-quiz .quiz .answ {
+  height: 0;
+  overflow: hidden;
+}
+
+body #app .cont-quiz .quiz div {
   margin: 0 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,13 +58,14 @@ body #app .cont-quiz div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #787887;
 }
 
-body #app .cont-quiz div input {
+body #app .cont-quiz .quiz div input {
   display: none;
 }
 
-body #app .cont-quiz div label {
+body #app .cont-quiz .quiz div label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
