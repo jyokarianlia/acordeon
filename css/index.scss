@@ -20,7 +20,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-color: $Soft-violet;
+    background: linear-gradient(to bottom, $Soft-violet, $Soft-blue);
     font-size: 12px;
     font-family: 'Kumbh Sans', sans-serif;;
 
@@ -31,6 +31,7 @@ body {
         margin-bottom: 7em;
         border-radius: 20px;
         padding-bottom: 3.5em;
+        box-shadow: $Very-dark-desaturated-blue 0px 1.5em 3em -1em;
 
         .cont-img {
             text-align: center;
@@ -83,6 +84,54 @@ body {
                     label {
                         display: flex;
                         align-items: center;
+                    }
+                }
+            }
+        }
+    }
+    .flex {
+
+        @media (min-width: 720px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            #app {
+                display: flex;
+                align-items: center;
+                width: 60vw;
+                height: 70vh;
+                max-height: 700px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+
+                .cont-img, .cont-quiz {
+                    flex: 1;
+                }
+
+                .cont-img {
+                    overflow: hidden;
+                    position: relative; 
+                    height: 100%;
+
+                    .img-mobile {
+                        display: none;
+                    }
+
+                    .img-desktop {
+                        position: absolute;
+                        left: -2em;
+                        top: 5em;
+                        width: 80%;
+                    }
+                }
+
+                .cont-quiz {
+                    h1 {
+                        text-align: left;
+                        margin-left: .9em;
                     }
                 }
             }

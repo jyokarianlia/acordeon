@@ -11,7 +11,8 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: #af67e9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(to bottom, #af67e9, #6565e7);
   font-size: 12px;
   font-family: 'Kumbh Sans', sans-serif;
 }
@@ -23,6 +24,8 @@ body #app {
   margin-bottom: 7em;
   border-radius: 20px;
   padding-bottom: 3.5em;
+  -webkit-box-shadow: #1d1e35 0px 1.5em 3em -1em;
+          box-shadow: #1d1e35 0px 1.5em 3em -1em;
 }
 
 body #app .cont-img {
@@ -83,6 +86,58 @@ body #app .cont-quiz .quiz div label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 720px) {
+  body .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  body .flex #app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60vw;
+    height: 70vh;
+    max-height: 700px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  body .flex #app .cont-img, body .flex #app .cont-quiz {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  body .flex #app .cont-img {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+  }
+  body .flex #app .cont-img .img-mobile {
+    display: none;
+  }
+  body .flex #app .cont-img .img-desktop {
+    position: absolute;
+    left: -2em;
+    top: 5em;
+    width: 80%;
+  }
+  body .flex #app .cont-quiz h1 {
+    text-align: left;
+    margin-left: .9em;
+  }
 }
 
 .attribution {
