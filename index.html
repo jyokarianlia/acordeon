@@ -25,13 +25,14 @@
       <section class="cont-quiz">
         <div class="quiz">
           <div>
-            <p>How many team members can I invite?</p>
-            <input type="checkbox" name="quiz1" id="quiz1">
-            <label for="quiz1">
+            <p :class="b">
+              How many team members can I invite?
+            </p>
+            <label for="quiz1" @click="actualizarClase(1)">
               <img src="images/icon-arrow-down.svg" alt="icon" class="img1">
             </label>
           </div>
-          <div class="answ">
+          <div class="answ" :class="visible">
             <p>
               You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
             </p>
@@ -42,13 +43,12 @@
 
         <div class="quiz">
           <div>
-            <p>What is the maximum file upload size?</p>
-            <input type="checkbox" name="quiz2" id="quiz2">
-            <label for="quiz2">
+            <p :class="b2">What is the maximum file upload size?</p>
+            <label for="quiz2" @click="actualizarClase(2)">
               <img src="images/icon-arrow-down.svg" alt="icon" class="img2">
             </label>
           </div>
-          <div class="answ">
+          <div class="answ2" :class="visible2">
             <p>
               No more than 2GB. All files in your account must fit your allotted storage space.
             </p>
@@ -59,15 +59,14 @@
 
         <div class="quiz">
           <div>
-            <p>
+            <p :class="b3">
               How do I reset my password?
             </p>
-            <input type="checkbox" name="quiz3" id="quiz3">
-            <label for="quiz3">
+            <label for="quiz3" @click="actualizarClase(3)">
               <img src="images/icon-arrow-down.svg" alt="icon" class="img3">
             </label>
           </div>
-          <div class="answ">
+          <div class="answ3" :class="visible3">
             <p>
               Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
             </p>
@@ -78,15 +77,14 @@
 
         <div class="quiz">
           <div>
-            <p>
+            <p :class="b4">
               Can I cancel my subscription?
             </p>
-            <input type="checkbox" name="quiz4" id="quiz4">
-            <label for="quiz4">
+            <label for="quiz4" @click="actualizarClase(4)">
               <img src="images/icon-arrow-down.svg" alt="icon" class="img4">
             </label>
           </div>
-          <div class="answ">
+          <div class="answ4" :class="visible4">
             <p>
               Yes! Send us a message and we’ll process your request no questions asked.
             </p>
@@ -97,15 +95,14 @@
 
         <div class="quiz">
           <div>
-            <p>
+            <p :class="b5">
               Do you provide additional support?
             </p>
-            <input type="checkbox" name="quiz5" id="quiz5">
-            <label for="quiz5">
+            <label for="quiz5" @click="actualizarClase(5)">
               <img src="images/icon-arrow-down.svg" alt="icon" class="img5">
             </label>
           </div>
-          <div class="answ">
+          <div class="answ5" :class="visible5">
             <p>
               Chat and email support is available 24/7. Phone lines are open during normal business hours.
             </p>
@@ -119,7 +116,10 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/jyokarianlia/acordeon.git">Irving Jovanny Olmedo</a>.
   </div>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="js/vue.js"></script>
 </body>
 </html>

@@ -20,6 +20,7 @@ body #app {
   background-color: #e7e7e9;
   margin: 0 2.5em;
   margin-top: 15em;
+  margin-bottom: 7em;
   border-radius: 20px;
   padding-bottom: 3.5em;
 }
@@ -45,9 +46,15 @@ body #app .cont-quiz .line {
   background-color: #787887;
 }
 
-body #app .cont-quiz .quiz .answ {
+body #app .cont-quiz .quiz .answ, body #app .cont-quiz .quiz .answ2, body #app .cont-quiz .quiz .answ3, body #app .cont-quiz .quiz .answ4, body #app .cont-quiz .quiz .answ5 {
   height: 0;
   overflow: hidden;
+}
+
+body #app .cont-quiz .quiz .ansW, body #app .cont-quiz .quiz .ansW2, body #app .cont-quiz .quiz .ansW3, body #app .cont-quiz .quiz .ansW4, body #app .cont-quiz .quiz .ansW5 {
+  height: auto;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
 }
 
 body #app .cont-quiz .quiz div {
@@ -59,6 +66,10 @@ body #app .cont-quiz .quiz div {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #787887;
+}
+
+body #app .cont-quiz .quiz div .b, body #app .cont-quiz .quiz div .b2, body #app .cont-quiz .quiz div .b3, body #app .cont-quiz .quiz div .b4, body #app .cont-quiz .quiz div .b5 {
+  font-weight: 700;
 }
 
 body #app .cont-quiz .quiz div input {
