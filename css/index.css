@@ -38,6 +38,10 @@ body #app .cont-img .img2 {
   left: 11%;
 }
 
+body #app .cont-img .bg-desk, body #app .cont-img .img-desktop {
+  display: none;
+}
+
 body #app h1 {
   text-align: center;
   font-weight: 700;
@@ -128,15 +132,17 @@ body #app .cont-quiz .quiz div label {
   body .flex #app .cont-img .img-mobile {
     display: none;
   }
-  body .flex #app .cont-img .img-desktop {
+  body .flex #app .cont-img .img-desktop, body .flex #app .cont-img .bg-desk {
+    display: inline;
     position: absolute;
+  }
+  body .flex #app .cont-img .img-desktop {
     left: -5em;
     top: 6em;
     width: 36em;
   }
   body .flex #app .cont-img .bg-desk {
     height: 70em;
-    position: absolute;
     left: -40em;
     top: -21em;
   }

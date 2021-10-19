@@ -41,6 +41,10 @@ body {
                 top: 74px;
                 left: 11%;
             }
+
+            .bg-desk, .img-desktop {
+                display: none;
+            }
         }
 
         h1 {
@@ -120,8 +124,12 @@ body {
                         display: none;
                     }
 
-                    .img-desktop {
+                    .img-desktop, .bg-desk {
+                        display: inline;
                         position: absolute;
+                    }
+
+                    .img-desktop {
                         left: -5em;
                         top: 6em;
                         width: 36em;
@@ -129,7 +137,6 @@ body {
 
                     .bg-desk {
                         height: 70em;
-                        position: absolute;
                         left: -40em;
                         top: -21em;
                     }
