@@ -53,15 +53,17 @@ body #app .cont-quiz .line {
   background-color: #787887;
 }
 
-body #app .cont-quiz .quiz .answ, body #app .cont-quiz .quiz .answ2, body #app .cont-quiz .quiz .answ3, body #app .cont-quiz .quiz .answ4, body #app .cont-quiz .quiz .answ5 {
-  height: 0;
+body #app .cont-quiz .quiz .answ {
+  height: 0px;
   overflow: hidden;
+  -webkit-transition: height ease .4s;
+  transition: height ease .4s;
 }
 
-body #app .cont-quiz .quiz .ansW, body #app .cont-quiz .quiz .ansW2, body #app .cont-quiz .quiz .ansW3, body #app .cont-quiz .quiz .ansW4, body #app .cont-quiz .quiz .ansW5 {
-  height: auto;
-  -webkit-transition: all ease 1s;
-  transition: all ease 1s;
+body #app .cont-quiz .quiz .ansW {
+  height: 63px;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
 }
 
 body #app .cont-quiz .quiz div {
@@ -75,7 +77,7 @@ body #app .cont-quiz .quiz div {
   color: #787887;
 }
 
-body #app .cont-quiz .quiz div .b, body #app .cont-quiz .quiz div .b2, body #app .cont-quiz .quiz div .b3, body #app .cont-quiz .quiz div .b4, body #app .cont-quiz .quiz div .b5 {
+body #app .cont-quiz .quiz div .b {
   font-weight: 700;
 }
 
@@ -90,6 +92,22 @@ body #app .cont-quiz .quiz div label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body #app .cont-quiz .quiz div label:hover {
+  cursor: pointer;
+}
+
+body #app .cont-quiz .quiz div label img {
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+}
+
+body #app .cont-quiz .quiz div label .img1 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
 }
 
 @media (min-width: 720px) {
@@ -118,6 +136,7 @@ body #app .cont-quiz .quiz div label {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    overflow: hidden;
   }
   body .flex #app .cont-img, body .flex #app .cont-quiz {
     -webkit-box-flex: 1;
@@ -145,6 +164,10 @@ body #app .cont-quiz .quiz div label {
     height: 70em;
     left: -40em;
     top: -21em;
+  }
+  body .flex #app .cont-quiz {
+    overflow-y: scroll;
+    max-height: 95%;
   }
   body .flex #app .cont-quiz h1 {
     text-align: left;
